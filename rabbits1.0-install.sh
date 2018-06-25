@@ -3,7 +3,7 @@
 read -p "please input your IP:" host_ip
 
 #download files
-wget https://github.com/zhichengzhang2017/rabbits1.11/raw/ef4b80a83159c3a7444ebc116e404d43f1a682c1/rabbits1.0.zip
+wget https://raw.githubusercontent.com/zhichengzhang2017/rabbits1.11/master/rabbits1.0.zip
 #unzip file
 unzip rabbits1.0.zip
 
@@ -46,7 +46,7 @@ mysql -uroot  -poracle <<EOF
                 `memory` int(11) DEFAULT NULL,
 		`time` int(11) DEFAULT NULL
         )ENGINE=InnoDB DEFAULT CHARSET=latin1;
-	EOF
+EOF
 
 
 #start running scripts
