@@ -1,13 +1,10 @@
 #!/bin/bash
 
 #download files
-wget https://raw.githubusercontent.com/zhichengzhang2017/rabbits1.11/master/rabbits1.0.zip
+wget https://raw.githubusercontent.com/zhichengzhang2017/rabbits1.11/master/rabbits1.0.zip && unzip rabbits1.0.zip
 
 #get IP
 read -p "please input your IP:" host_ip
-
-#unzip file
-unzip rabbits1.0.zip
 
 #set IP
 sed -i "s/123.206.81.19/$host_ip/g" `grep 123.206.81.19 -rl rabbits1.0/templates/`
