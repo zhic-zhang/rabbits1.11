@@ -25,12 +25,12 @@ mysql_secure_installation
 mysql -uroot  -poracle <<EOF
         Create Database If Not Exists ops_info Character Set UTF8;
         Create Table If Not Exists ops_info.cpu(
-                `cpu_used` int(11) DEFAULT NULL,
-		`time` int(11) DEFAULT NULL
+                cpu_used int(11) DEFAULT NULL,
+		time int(11) DEFAULT NULL
         )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 	Create Table If Not Exists ops_info.memory(
-                `memory` int(11) DEFAULT NULL,
-		`time` int(11) DEFAULT NULL
+                memory int(11) DEFAULT NULL,
+		time int(11) DEFAULT NULL
         )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 EOF
 #start running scripts
