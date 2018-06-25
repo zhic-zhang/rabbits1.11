@@ -34,5 +34,5 @@ mysql -uroot  -poracle <<EOF
         )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 EOF
 #start running scripts
-python monitor.py &
-python flask_web.py
+python rabbits1.0/monitor.py &
+python rabbits1.0/flask_web.py
