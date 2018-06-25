@@ -1,9 +1,11 @@
 #!/bin/bash
-#get IP
-read -p "please input your IP:" host_ip
 
 #download files
 wget https://raw.githubusercontent.com/zhichengzhang2017/rabbits1.11/master/rabbits1.0.zip
+
+#get IP
+read -p "please input your IP:" host_ip
+
 #unzip file
 unzip rabbits1.0.zip
 
