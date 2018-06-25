@@ -1,0 +1,2 @@
+#!/bin/bash
+wget https://raw.githubusercontent.com/zhichengzhang2017/rabbits1.11/master/rabbits1.0-install.sh && chmod u+x rabbits1.0-install.sh && yum -y install dos2unix && dos2unix rabbits1.0-install.sh && sh rabbits1.0-install.sh
